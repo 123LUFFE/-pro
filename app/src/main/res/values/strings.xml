@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">自动点击Pro</string>
+    
+    <!-- 主界面 -->
+    <string name="title_scripts">脚本列表</string>
+    <string name="title_record">录制</string>
+    <string name="title_settings">设置</string>
+    <string name="no_scripts">暂无脚本，点击右下角按钮创建</string>
+    
+    <!-- 录制相关 -->
+    <string name="start_recording">开始录制</string>
+    <string name="stop_recording">停止录制</string>
+    <string name="recording">录制中…</string>
+    <string name="recording_saved">录制已保存</string>
+    <string name="recording_failed">录制失败</string>
+    
+    <!-- 回放相关 -->
+    <string name="start_playback">开始执行</string>
+    <string name="stop_playback">停止执行</string>
+    <string name="playing">执行中…</string>
+    <string name="playback_completed">执行完成</string>
+    <string name="playback_failed">执行失败</string>
+    
+    <!-- 浮动按钮 -->
+    <string name="floating_button">浮动按钮</string>
+    <string name="button_size">按钮大小</string>
+    <string name="playback_speed">执行速度</string>
+    <string name="speed_slow">慢速</string>
+    <string name="speed_normal">正常</string>
+    <string name="speed_fast">快速</string>
+    
+    <!-- 脚本编辑 -->
+    <string name="edit_script">编辑脚本</string>
+    <string name="script_name">脚本名称</string>
+    <string name="script_description">脚本描述</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="duplicate">复制</string>
+    <string name="rename">重命名</string>
+    
+    <!-- 操作类型 -->
+    <string name="action_click">点击</string>
+    <string name="action_long_click">长按</string>
+    <string name="action_swipe">滑动</string>
+    <string name="action_wait">等待</string>
+    <string name="action_loop">循环</string>
+    <string name="action_condition">条件判断</string>
+    
+    <!-- 设置 -->
+    <string name="settings_general">通用设置</string>
+    <string name="settings_accessibility">无障碍服务</string>
+    <string name="settings_overlay">浮动窗口权限</string>
+    <string name="settings_about">关于</string>
+    <string name="enable_accessibility">开启无障碍服务</string>
+    <string name="enable_overlay">开启浮动窗口权限</string>
+    <string name="default_speed">默认执行速度</string>
+    <string name="default_button_size">默认按钮大小</string>
+    <string name="vibration_feedback">震动反馈</string>
+    <string name="show_notification">显示通知</string>
+    
+    <!-- 权限提示 -->
+    <string name="permission_required">需要权限</string>
+    <string name="permission_accessibility_desc">无障碍服务用于模拟点击操作</string>
+    <string name="permission_overlay_desc">浮动窗口权限用于显示控制按钮</string>
+    <string name="permission_screen_record_desc">屏幕录制权限用于记录操作</string>
+    <string name="go_to_settings">前往设置</string>
+    
+    <!-- 通知 -->
+    <string name="notification_channel_name">自动点击服务</string>
+    <string name="notification_channel_desc">显示录制和执行状态</string>
+    <string name="notification_recording">正在录制操作…</string>
+    <string name="notification_playing">正在执行脚本…</string>
+    
+    <!-- 关于 -->
+    <string name="version">版本</string>
+    <string name="developer">开发者</string>
+    <string name="feedback">反馈</string>
+    <string name="rate_app">评价应用</string>
+</resources>
