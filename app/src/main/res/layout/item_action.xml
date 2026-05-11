@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/surface">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- 序号 -->
+        <TextView
+            android:id="@+id/actionNumber"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="1" />
+
+        <!-- 操作类型 -->
+        <TextView
+            android:id="@+id/actionType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/actionNumber"
+            app:layout_constraintEnd_toStartOf="@id/moreButton"
+            tools:text="点击" />
+
+        <!-- 操作详情 -->
+        <TextView
+            android:id="@+id/actionDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/actionType"
+            app:layout_constraintStart_toEndOf="@id/actionNumber"
+            app:layout_constraintEnd_toStartOf="@id/moreButton"
+            tools:text="位置: (500, 500), 持续: 100ms" />
+
+        <!-- 更多选项 -->
+        <ImageButton
+            android:id="@+id/moreButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_more"
+            app:tint="@color/text_secondary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

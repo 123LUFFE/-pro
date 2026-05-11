@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/surface">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- 脚本图标 -->
+        <ImageView
+            android:id="@+id/scriptIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_script"
+            app:tint="@color/primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- 脚本名称 -->
+        <TextView
+            android:id="@+id/scriptName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/scriptIcon"
+            app:layout_constraintEnd_toStartOf="@id/moreButton"
+            tools:text="我的脚本" />
+
+        <!-- 脚本描述 -->
+        <TextView
+            android:id="@+id/scriptDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/scriptName"
+            app:layout_constraintStart_toEndOf="@id/scriptIcon"
+            app:layout_constraintEnd_toStartOf="@id/moreButton"
+            tools:text="这是一个示例脚本描述" />
+
+        <!-- 操作数量 -->
+        <TextView
+            android:id="@+id/actionCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_hint"
+            android:textSize="11sp"
+            app:layout_constraintTop_toBottomOf="@id/scriptDescription"
+            app:layout_constraintStart_toEndOf="@id/scriptIcon"
+            tools:text="10 个操作" />
+
+        <!-- 更新时间 -->
+        <TextView
+            android:id="@+id/updateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/text_hint"
+            android:textSize="11sp"
+            app:layout_constraintTop_toTopOf="@id/actionCount"
+            app:layout_constraintStart_toEndOf="@id/actionCount"
+            tools:text="2小时前" />
+
+        <!-- 更多选项按钮 -->
+        <ImageButton
+            android:id="@+id/moreButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_more"
+            app:tint="@color/text_secondary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 执行按钮 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/start_playback"
+            app:icon="@drawable/ic_play"
+            style="@style/ButtonPrimary"
+            app:layout_constraintTop_toBottomOf="@id/actionCount"
+            app:layout_constraintStart_toEndOf="@id/scriptIcon"
+            app:layout_constraintEnd_toStartOf="@id/floatingButton" />
+
+        <!-- 浮动按钮开关 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/floatingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/floating_button"
+            style="@style/ButtonAccent"
+            app:layout_constraintTop_toBottomOf="@id/actionCount"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
